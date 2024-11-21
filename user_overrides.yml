@@ -14,8 +14,8 @@ generate_local_vars: false
 make_num_jobs: 1
 bootloader_multiple: true
 bootloader_disks:
-  - "netboot.xyz"
-  - "netboot.xyz-metal"
+  - "os-set.net"
+  - "os-set.net-metal"
 
 # set desired site name
 site_name: os-set.net
