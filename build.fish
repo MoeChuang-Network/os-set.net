@@ -9,8 +9,6 @@ git clone https://github.com/netbootxyz/netboot.xyz.git $root
 # patch
 
 cp ./user_overrides.yml $root
-cp $root/roles/netbootxyz/templates/disks/netboot.xyz.j2 $root/roles/netbootxyz/templates/disks/os-set.net.j2
-cp $root/roles/netbootxyz/templates/disks/netboot.xyz-metal.j2 $root/roles/netbootxyz/templates/disks/os-set.net-metal.j2
 
 # End of patch
 
