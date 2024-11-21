@@ -1,0 +1,95 @@
+---
+#netbootxyz_root: /web
+
+# overrides defaults in netbootxyz role
+generate_menus: true
+generate_disks: true
+generate_disks_arm: true
+generate_disks_hybrid: true
+generate_disks_linux: true
+generate_disks_rpi: false
+generate_checksums: true
+generate_version_file: true
+generate_local_vars: false
+make_num_jobs: 1
+bootloader_multiple: true
+bootloader_disks:
+  - "netboot.xyz"
+  - "netboot.xyz-metal"
+
+# set desired site name
+site_name: os-set.net
+
+# set desired boot domain
+# boot_domain: boot.mysitename.com
+
+# set boot version
+# boot_version: "2.x"
+
+boot_domain: boot.os-set.net
+live_endpoint: https://boot.os-set.net/assets
+
+# bootloader_tftp_enabled: false
+bootloader_https_enabled: true
+bootloader_http_enabled: true
+
+# set release overrides from standard netboot.xyz defaults
+# release_overrides:
+#   alpinelinux:
+#     name: "Alpine Linux"
+#   fedora:
+#     mirror: "mirrors.kernel.org"
+
+release_overrides:
+  almalinux:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  alpinelinux:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  archlinux:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  centos:
+    mirror: https://mirrors.aliyun.com
+  debian:
+    mirror: https://mirrors.aliyun.com
+    archive_mirror: https://mirrors.aliyun.com/debian-archive
+  devuan:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  fedora:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  kali:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+  mageia:
+    mirror: https://mirrors.bfsu.edu.cn
+  openEuler:
+    mirror: https://mirrors.aliyun.com/openeuler
+  openbsd:
+    mirror: https://mirrors.aliyun.com
+  opensuse:
+    mirror: https://mirrors.aliyun.com/opensuse
+  rockylinux:
+    base_dir: ''
+    mirror: https://mirrors.aliyun.com/rockylinux
+  slackware:
+    mirror: https://mirrors.aliyun.com/opensuse
+  tinycore:
+    mirror: https://mirrors.aliyun.com/tinycorelinux
+  ubuntu:
+    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    archive_mirror: https://mirrors.aliyun.com/oldubuntu-releases
+
+# set utilitiesefi_overrides from standard netboot.xyz defaults for EFI utilities
+# utilitiesefi_overrides:
+#  supergrub:
+#    enabled: false
+
+# set utilities_overrides from standard netboot.xyz defaults for PC BIOS utilities
+# utilitiespcbios64_overrides:
+#  supergrub:
+#    enabled: false
+
+early_menu_enabled: false
+early_menu_contents: |
+   ### early menu overrides
+   ### used to set early ipxe options such as custom console & logo
+   # console --x 1024 --y 768
+   # console --picture https://boot.netboot.xyz/logo.png
