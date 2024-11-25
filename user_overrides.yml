@@ -42,22 +42,22 @@ bootloader_http_enabled: true
 
 release_overrides:
   almalinux:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   alpinelinux:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   archlinux:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   centos:
     mirror: https://mirrors.aliyun.com
   debian:
     mirror: https://mirrors.aliyun.com
     archive_mirror: https://mirrors.aliyun.com/debian-archive
   devuan:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   fedora:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   kali:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
   mageia:
     mirror: https://mirrors.bfsu.edu.cn
   openEuler:
@@ -74,7 +74,7 @@ release_overrides:
   tinycore:
     mirror: https://mirrors.aliyun.com/tinycorelinux
   ubuntu:
-    mirror: https://mirrors.tuna.tsinghua.edu.cn
+    mirror: https://mirrors.bfsu.edu.cn
     archive_mirror: https://mirrors.aliyun.com/oldubuntu-releases
 
 # set utilitiesefi_overrides from standard netboot.xyz defaults for EFI utilities
